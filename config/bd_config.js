@@ -3,7 +3,7 @@ var opts = {
     define: {
     }
 }
-//const database = new Sequelize('postgres://usuario:clave@localhost:5432/api_test', opts)
-const database = new Sequelize('postgres://postgres:1234@localhost:5432/api_test', opts)
+const DATABASE_URL = process.env.DATABASE_URL || '';
+const database = new Sequelize(DATABASE_URL, opts)
 
 module.exports = { Model, database }
