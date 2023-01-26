@@ -208,7 +208,7 @@ const AllCategorias = async (req, res) => {
     try {
         const data = await Categorias.findAll({
             where: {
-                status: true
+                activo: true
             }
         })
 
