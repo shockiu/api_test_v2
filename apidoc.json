@@ -7,7 +7,7 @@
         "withCompare": false,
         "withGenerator": true
     },
-    "sampleUrl": "https://api-test-v2.onrender.com",
+    "sampleUrl": null,
     "order": [
         "1. Información",
         "2. Usuarios",
