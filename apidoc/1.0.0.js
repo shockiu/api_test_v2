@@ -436,6 +436,43 @@
     }
  */
 
+/**
+ * @api {get} /producto/categoria/index Buscar Categorias
+ * @apiVersion v1.0.0
+ * @apiGroup 3. Categorias
+ * @apiHeader {String} token Token de autenticación del usuario.
+ * @apiHeaderExample {json} Ejemplo de envio de token por Header
+ *     "headers": {
+ *           "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiOCIsZIHQelbhwTK_1LL5XSERzOK_pvw2Du0yAb-Jg0ffAQ"
+ *       }
+ * @apiSuccessExample {json} Respuesta Success
+ * HTTP/1.1 200 OK
+    {
+        "type": "success",
+        "code": 1000,
+        "message": "La operación fué realizada exitosamente."
+    }
+ * @apiSuccessExample {json} Respuesta Info
+ * HTTP/1.1 200 OK
+    {
+        "type": "info",
+        "code": 1005,
+        "message": "La información solicitada no existe."
+    }
+ * @apiSuccessExample {json} Token Invalido
+ * HTTP/1.1 403 OK
+    { 
+        "message": "Token invalido"
+    }
+ * @apiSuccessExample {json} Respuesta Error
+ * HTTP/1.1 200 OK
+    {
+        "type": "error",
+        "code": 1100,
+        "message": "Ha ocurrrido un error inesperado.",
+        "reference": "{Identificador de Error}"
+    }
+ */
     
  /**
  * @api {post} /producto/categoria/create Crear Categorias

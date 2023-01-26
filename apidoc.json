@@ -3,7 +3,16 @@
     "version": "v1.0.0",
     "description": "Guia de integración con API Test",
     "template": {
-        "forceLanguage": "es"
+        "forceLanguage": "es",
+        "withCompare": false,
+        "withGenerator": true
     },
-    "sampleUrl": null
+    "sampleUrl": "https://api-test-v2.onrender.com",
+    "order": [
+        "1. Información",
+        "2. Usuarios",
+        "3. Categorias",
+        "4. Productos",
+        "5. Facturación"
+    ]
 }

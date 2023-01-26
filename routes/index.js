@@ -20,6 +20,7 @@ app.post('/user/edit', AuthToken, users.EditarUsuario);
 app.get('/producto/index', AuthToken, producto.AllProducto);
 app.post('/producto/create', AuthToken, producto.CrearProducto);
 app.post('/producto/edit', AuthToken, producto.EditarProducto);
+app.get('/producto/categoria/index', AuthToken, producto.AllCategorias);
 app.post('/producto/categoria/create', AuthToken, producto.CrearCategoria);
 app.post('/producto/categoria/edit', AuthToken, producto.EditarCategoria);
 

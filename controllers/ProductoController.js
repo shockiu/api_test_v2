@@ -203,6 +203,21 @@ const AllProducto = async (req, res) => {
     }
 }
 
+const AllCategorias = async (req, res) => {
+
+    try {
+        const data = await Categorias.findAll({
+            where: {
+                status: true
+            }
+        })
+
+        await info(req, res, '1000', data);
+    } catch (error) {
+        await catchError(req, res, error);
+    }
+}
+
 function findProductoById (id) {
     return Productos.findOne({
         where: {
@@ -241,4 +256,5 @@ module.exports = {
     CrearCategoria,
     EditarCategoria,
     AllProducto,
+    AllCategorias,
 }
