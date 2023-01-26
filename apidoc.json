@@ -11,8 +11,11 @@
     "order": [
         "1. Información",
         "2. Usuarios",
+        "CrearUsuario",
+        "LoginUsuario",
         "3. Categorias",
         "4. Productos",
-        "5. Facturación"
+        "5. Facturación",
+        "BuscarProductos"
     ]
 }

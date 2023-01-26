@@ -55,6 +55,7 @@
  * @api {post} /user/create Creación de Usuario
  * @apiVersion v1.0.0
  * @apiGroup 2. Usuarios
+ * @apiName CrearUsuario
  * @apiParam {String} nombre Nombre del Usuario
  * @apiParam {String} apellido Apellido del Usuario
  * @apiParam {String} usuario Nombre de Usuario para ingresar al sistema
@@ -96,6 +97,7 @@
  * @api {post} /user/login Login de Usuario
  * @apiVersion v1.0.0
  * @apiGroup 2. Usuarios
+ * @apiName LoginUsuario
  * @apiParam {String} usuario Nombre de Usuario para ingresar al sistema
  * @apiParam {String} password Contraseña del Usuario
  * @apiSuccess {String} nombre Nombre del Usuario
@@ -192,7 +194,7 @@
  */
 
  /**
- * @api {post} /user/update Editar Usuario
+ * @api {post} /user/edit Editar Usuario
  * @apiVersion v1.0.0
  * @apiGroup 2. Usuarios
  * @apiParam {String} nombre Nombre del Usuario
@@ -246,6 +248,7 @@
  * @api {get} /producto/index Productos Existentes
  * @apiVersion v1.0.0
  * @apiGroup 4. Productos
+ * @apiName BuscarProductos
  * @apiSuccess {String} id Identificador del Producto
  * @apiSuccess {String} codigo Código del Producto
  * @apiSuccess {String} descripcion Descripción del Producto
