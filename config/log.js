@@ -29,24 +29,31 @@ const wlog = winston.createLogger({
 
 var logger = {
     log: function (level, req, message) {
+        console.log(req, formatMessage(req, message))
         wlog.log(level, formatMessage(req, message));
     },
     error: function (req, message) {
+        console.log(req, formatMessage(req, message))
         wlog.error(formatMessage(req, message));
     },
     warn: function (req, message) {
+        console.log(req, formatMessage(req, message))
         wlog.warn(formatMessage(req, message));
     },
     verbose: function (req, message) {
+        console.log(req, formatMessage(req, message))
         wlog.verbose(formatMessage(req, message));
     },
     info: function (req, message) {
+        console.log(req, formatMessage(req, message))
         wlog.info(formatMessage(req, message));
     },
     debug: function (req, message) {
+        console.log(req, formatMessage(req, message))
         wlog.debug(formatMessage(req, message));
     },
     silly: function (req, message) {
+        console.log(req, formatMessage(req, message))
         wlog.silly(formatMessage(req, message));
     }
 };
