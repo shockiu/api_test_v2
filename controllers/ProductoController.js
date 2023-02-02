@@ -145,7 +145,7 @@ const EditarProducto = async (req, res) => {
                 {producto_id:producto.id},
                 transaction: t
             });
-            for (const eCategoria of req.body.categorias) {
+            for (const eCategoria of req.body.categoria) {
                 await findCategoriaById(eCategoria.categoria_id).then(res => { verify = res });
                 if (verify) {
                     await ProductosCategorias.create({
